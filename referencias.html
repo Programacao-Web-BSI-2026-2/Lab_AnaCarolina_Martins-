@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material de Referência HTML</title>
+</head>
+
+<body id="topo">
+
+    <h1>Material de Referência HTML</h1>
+
+    <ul>
+        <li><a href="index.html">Voltar para o Início</a></li>
+        <li><strong>Material de Referência HTML (Você está aqui)</strong></li>
+    </ul>
+
+    <hr>
+
+    <h2>Índice Rápido</h2>
+
+    <ul>
+        <li><a href="#tags">Tags Básicas</a></li>
+        <li><a href="#links">Links e Imagens</a></li>
+        <li><a href="#absolutos">Links Absolutos e Relativos</a></li>
+        <li><a href="#fragmentos">Links de Fragmento</a></li>
+        <li><a href="#protocolos">Protocolos Específicos</a></li>
+        <li><a href="#seguranca">Segurança e Acessibilidade</a></li>
+        <li><a href="#documentacao">Documentação Oficial</a></li>
+    </ul>
+
+    <hr>
+
+    <section id="tags">
+
+        <h2>Tags Básicas</h2>
+
+        <p><strong>&lt;h1&gt; ao &lt;h6&gt;:</strong> Definem a hierarquia de títulos.</p>
+
+        <p><strong>&lt;p&gt;:</strong> Utilizada para criar parágrafos.</p>
+
+        <p><strong>&lt;br&gt;:</strong> Insere uma quebra de linha.</p>
+
+        <p><strong>&lt;ul&gt;:</strong> Cria uma lista não ordenada.</p>
+
+        <p><strong>&lt;ol&gt;:</strong> Cria uma lista ordenada.</p>
+
+        <p><strong>&lt;li&gt;:</strong> Define um item de uma lista.</p>
+
+        <p><strong>&lt;div&gt;:</strong> Agrupa elementos HTML.</p>
+
+        <a href="#topo">↑ Voltar ao topo</a>
+
+    </section>
+
+    <section id="links">
+
+        <h2>Links e Imagens</h2>
+
+        <p><strong>&lt;a href="..."&gt;:</strong> Tag âncora usada para criar hiperlinks.</p>
+
+        <p><strong>href:</strong> Define o destino do link.</p>
+
+        <p><strong>target="_blank":</strong> Abre o link em uma nova aba.</p>
+
+        <p><strong>target="_self":</strong> Abre o link na mesma aba.</p>
+
+        <p><strong>&lt;img&gt;:</strong> Utilizada para inserir imagens.</p>
+
+        <p><strong>src:</strong> Define o endereço da imagem.</p>
+
+        <p><strong>alt:</strong> Descreve a imagem.</p>
+
+        <a href="#topo">↑ Voltar ao topo</a>
+
+    </section>
+
+    <section id="absolutos">
+
+        <h2>Links Absolutos e Relativos</h2>
+
+        <h3>Links Absolutos</h3>
+
+        <p>
+            Possuem o endereço completo, incluindo protocolo e domínio.
+            São utilizados para acessar páginas externas.
+        </p>
+
+        <p>Exemplo:</p>
+
+        <a href="https://github.com/torvalds/linux"
+           target="_blank"
+           rel="noopener noreferrer">
+            Repositório do Linux
+        </a>
+
+        <h3>Links Relativos</h3>
+
+        <p>
+            Dependem da localização do arquivo atual na estrutura de pastas.
+        </p>
+
+        <p><strong>./</strong> Representa a pasta atual.</p>
+
+        <p><strong>../</strong> Sobe um nível na estrutura de diretórios.</p>
+
+        <p>Exemplos:</p>
+
+        <p>contato.html - Arquivo na mesma pasta.</p>
+
+        <p>../assets/logo.png - Sobe uma pasta e acessa a pasta assets.</p>
+
+        <a href="#topo">↑ Voltar ao topo</a>
+
+    </section>
+
+    <section id="fragmentos">
+
+        <h2>Links de Fragmento (Âncoras)</h2>
+
+        <p>
+            Utilizam o símbolo # para direcionar o usuário
+            a uma parte específica da mesma página.
+        </p>
+
+        <p>
+            Para funcionar, o destino precisa possuir um atributo id.
+        </p>
+
+        <p>Exemplo:</p>
+
+        <p>&lt;a href="#arquitetura"&gt;Arquitetura&lt;/a&gt;</p>
+
+        <p>&lt;section id="arquitetura"&gt;</p>
+
+        <p>
+            O navegador realiza essa navegação diretamente,
+            sem enviar o fragmento ao servidor.
+        </p>
+
+        <a href="#topo">↑ Voltar ao topo</a>
+
+    </section>
+
+    <section id="protocolos">
+
+        <h2>Protocolos Específicos</h2>
+
+        <h3>E-mail</h3>
+
+        <p>
+            O protocolo mailto permite abrir o programa de e-mail padrão.
+        </p>
+
+        <a href="mailto:suporte@exemplo.com.br">
+            Enviar E-mail
+        </a>
+
+        <h3>Telefone</h3>
+
+        <p>
+            O protocolo tel permite iniciar uma ligação.
+        </p>
+
+        <a href="tel:+5522999999999">
+            Ligar para a Secretaria
+        </a>
+
+        <h3>WhatsApp</h3>
+
+        <p>
+            Permite abrir uma conversa diretamente no WhatsApp.
+        </p>
+
+        <a href="https://wa.me/5522999999999"
+           target="_blank"
+           rel="noopener noreferrer">
+            Chamar no WhatsApp
+        </a>
+
+        <a href="#topo">↑ Voltar ao topo</a>
+
+    </section>
+
+    <section id="seguranca">
+
+        <h2>Segurança e Acessibilidade</h2>
+
+        <h3>Segurança com target="_blank"</h3>
+
+        <p>
+            Quando um link abre em uma nova aba, pode existir
+            o risco chamado Reverse Tabnabbing.
+        </p>
+
+        <p>
+            Para evitar esse problema, utilizamos
+            rel="noopener noreferrer".
+        </p>
+
+        <p><strong>noopener:</strong> Impede o acesso à página original através de window.opener.</p>
+
+        <p><strong>noreferrer:</strong> Impede o envio da informação de referência da página anterior.</p>
+
+        <h3>Acessibilidade (A11y)</h3>
+
+        <p>
+            Os textos dos links devem indicar claramente
+            para onde o usuário será direcionado.
+        </p>
+
+        <p>
+            Evite expressões genéricas como "Clique aqui".
+        </p>
+
+        <p>
+            Prefira textos descritivos, como "Consultar documentação oficial do HTML".
+        </p>
+
+        <a href="#topo">↑ Voltar ao topo</a>
+
+    </section>
+
+    <section id="documentacao">
+
+        <h2>Documentação Oficial</h2>
+
+        <p>Consulte os materiais oficiais para estudar HTML:</p>
+
+        <ul>
+
+            <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    MDN Web Docs - HTML
+                </a>
+            </li>
+
+            <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    MDN - Elemento Âncora
+                </a>
+            </li>
+
+            <li>
+                <a href="https://html.spec.whatwg.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Documentação Oficial HTML - WHATWG
+                </a>
+            </li>
+
+            <li>
+                <a href="https://docs.github.com/pt/pages"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Documentação GitHub Pages
+                </a>
+            </li>
+
+        </ul>
+
+        <a href="#topo">↑ Voltar ao topo</a>
+
+    </section>
+
+    <hr>
+
+    <p>
+        <a href="index.html">Voltar para o Início</a>
+    </p>
+
+</body>
+</html>
