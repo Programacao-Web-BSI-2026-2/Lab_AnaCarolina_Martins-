@@ -1,35 +1,25 @@
-Guia de Comandos Git
-O que é Git?
-Git é um sistema de controle de versões utilizado para acompanhar as alterações em projetos.
+Registro da Prática 01
+Disciplina
+Programação para Web
 
-Comandos básicos
-git init
-Inicializa um repositório Git.
+Objetivo
+Aprender os fundamentos da linguagem HTML e compreender a estrutura básica de uma página web.
 
-git status
-Mostra o estado atual dos arquivos do projeto.
-
-git add .
-Adiciona os arquivos modificados à área de preparação.
-
-git commit
-Registra as alterações no histórico do projeto.
-
-Exemplo: git commit -m "Adicionando atividades"
-
-git push
-Envia os commits locais para o repositório remoto.
-
-Exemplo: git push origin main
-
-git pull
-Atualiza o repositório local com as alterações remotas.
-
-git clone
-Cria uma cópia de um repositório remoto.
-
-GitHub Pages
-O GitHub Pages permite publicar sites estáticos diretamente a partir de um repositório no GitHub.
-
+Conteúdos estudados
+Estrutura de documentos HTML
+Tags de título e parágrafo
+Listas ordenadas e não ordenadas
+Criação de hiperlinks
+Organização de arquivos em pastas
+Tags HTML utilizadas
+<html>: define o documento HTML.
+<head>: contém informações da página.
+<body>: contém o conteúdo visível.
+<h1>: define um título principal.
+<p>: cria um parágrafo.
+<a>: cria um hiperlink.
+<ul>: cria uma lista não ordenada.
+<ol>: cria uma lista ordenada.
+<li>: representa um item de lista.
 Conclusão
-O Git facilita o gerenciamento das versões do projeto e o GitHub permite armazenar e publicar os arquivos desenvolvidos.
+A atividade permitiu compreender como criar e organizar páginas HTML e estabelecer navegação entre diferentes arquivos de um projeto.
