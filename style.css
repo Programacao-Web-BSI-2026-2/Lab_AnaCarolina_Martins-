@@ -1,0 +1,150 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #203f8c;
+    --cor-fundo: #f1f5f9;
+    --cor-superficie: #ffffff;
+    --cor-texto: #263449;
+    --cor-borda: #dce3eb;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto 1fr;
+
+    grid-template-areas:
+        "header header"
+        "nav main";
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+}
+
+.cabecalho {
+    grid-area: header;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 18px 25px;
+    border-bottom: 3px solid #4b83d4;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.cabecalho p {
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+
+.menu-lateral {
+    grid-area: nav;
+    background-color: var(--cor-superficie);
+    padding: 20px;
+    border-right: 1px solid var(--cor-borda);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.menu-lateral h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.menu-lateral ul,
+.menu-lateral ol {
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-lateral li {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.menu-lateral a {
+    display: block;
+    color: var(--cor-texto);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.menu-lateral a:hover {
+    background-color: #e5edff;
+    color: var(--cor-primaria);
+}
+
+.pagina-atual {
+    display: block;
+    background-color: #dce9ff;
+    color: var(--cor-primaria);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+hr {
+    display: none;
+}
+
+.conteudo {
+    grid-area: main;
+    padding: 30px;
+    background-color: var(--cor-fundo);
+}
+
+.conteudo h2 {
+    color: var(--cor-primaria);
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.conteudo p {
+    font-size: 15px;
+    max-width: 800px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+
+        grid-template-areas:
+            "header"
+            "nav"
+            "main";
+    }
+
+    .cabecalho {
+        padding: 18px;
+    }
+
+    .cabecalho h1 {
+        font-size: 21px;
+    }
+
+    .menu-lateral {
+        border-right: none;
+        border-bottom: 1px solid var(--cor-borda);
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+}
