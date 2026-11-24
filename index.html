@@ -5,109 +5,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio de Programação Web</title>
+
+    <title>Portfólio de Laboratórios</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="topo">
 
-    <h1>Meu Portfólio de Programação Web</h1>
+    <!-- Cabeçalho principal -->
+    <header class="cabecalho">
+        <h1>Portfólio de Laboratórios</h1>
 
-    <p>
-        Repositório de atividades práticas e documentação da disciplina.
-    </p>
+        <p>
+            Repositório de atividades práticas, registros de aula
+            e trilhas de desenvolvimento web.
+        </p>
+    </header>
 
-    <h2>Menu Principal</h2>
+    <!-- Menu lateral -->
+    <nav class="menu-lateral" aria-label="Menu principal">
 
-    <ul>
+        <ul>
+            <li>
+                <strong class="pagina-atual">Início</strong>
+            </li>
 
-        <li><strong>Início (Você está aqui)</strong></li>
+            <li>
+                <a href="referencias.html">Referências</a>
+            </li>
+        </ul>
 
-        <li>
-            <a href="referencias.html">
-                Material de Referência HTML
-            </a>
-        </li>
+        <hr>
 
-        <li>
-            Registros de Sala de Aula (Markdown):
+        <h2>Registros de Sala de Aula</h2>
 
-            <ul>
-                <li>
-                    <a href="doc/pratica-01.html">
-                        Registro da Prática 01
-                    </a>
-                </li>
+        <ul>
+            <li>
+                <a href="doc/pratica-01.html">
+                    Aula 01 — Introdução à Web
+                </a>
+            </li>
 
-                <li>
-                    <a href="doc/comandos-git.html">
-                        Guia de Comandos Git
-                    </a>
-                </li>
-            </ul>
-        </li>
+            <li>
+                <a href="doc/comandos-git.html">
+                    Aula 02 — HTML Semântico
+                </a>
+            </li>
 
-        <li>
-            Trilhas de Laboratório:
+            <li>
+                <a href="#">
+                    Aula 03 — Fundamentos de CSS e Grid
+                </a>
+            </li>
+        </ul>
 
-            <ol>
+        <hr>
 
-                <li>
-                    <strong>Módulo 1: Estrutura (HTML)</strong>
+        <h2>Trilhas de Laboratório</h2>
 
-                    <ul>
-                        <li>
-                            <a href="lab/01/index.html">
-                                Lab 01 - Hello World e Tags Básicas
-                            </a>
-                        </li>
+        <ol>
+            <li>
+                <strong>Módulo 1: HTML Semântico</strong>
 
-                        <li>
-                            <a href="lab/02/index.html">
-                                Lab 02 - Listas Ordenadas e Não Ordenadas
-                            </a>
-                        </li>
+                <ul>
+                    <li>
+                        <a href="lab/01/index.html">
+                            Lab 01 — Estrutura Básica
+                        </a>
+                    </li>
 
-                        <li>
-                            <a href="lab/03/index.html">
-                                Lab 03 - Estruturação de Tabelas
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+                    <li>
+                        <a href="lab/02/index.html">
+                            Lab 02 — Listas e Links
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li>
-                    <strong>Módulo 2: Estilização (CSS)</strong>
+            <li>
+                <strong>Módulo 2: CSS e Layouts</strong>
 
-                    <ul>
-                        <li>Lab 04 - Introdução ao CSS</li>
-                        <li>Lab 05 - Seletores e Propriedades</li>
-                        <li>Lab 06 - Layouts Responsivos</li>
-                    </ul>
-                </li>
+                <ul>
+                    <li>
+                        <a href="lab/03/index.html">
+                            Lab 03 — Box Model
+                        </a>
+                    </li>
 
-                <li>
-                    <strong>Módulo 3: Interatividade (JavaScript)</strong>
+                    <li>
+                        <a href="lab/04/index.html">
+                            Lab 04 — CSS Grid Layout
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                    <ul>
-                        <li>Lab 07 - Manipulação do DOM</li>
-                        <li>Lab 08 - Eventos e Funções</li>
-                        <li>Lab 09 - Validação de Formulários</li>
-                    </ul>
-                </li>
+            <li>
+                <strong>Módulo 3: Interatividade (JavaScript)</strong>
 
-            </ol>
-        </li>
+                <ul>
+                    <li>Lab 07 — Manipulação do DOM</li>
+                    <li>Lab 08 — Eventos e Funções</li>
+                    <li>Lab 09 — Validação de Formulários</li>
+                </ul>
+            </li>
+        </ol>
 
-    </ul>
+    </nav>
 
-    <hr>
+    <!-- Conteúdo principal -->
+    <main class="conteudo">
 
-    <h2>Status do Projeto</h2>
+        <section>
+            <h2>Bem-vindo ao Portfólio</h2>
 
-    <p>
-        Este site consolida tanto as implementações práticas (HTML)
-        quanto a documentação técnica (Markdown) elaborada durante as aulas.
-    </p>
+            <p>
+                Este espaço reúne as entregas práticas realizadas
+                ao longo da disciplina. Utilize o menu lateral para
+                navegar entre os registros de sala de aula,
+                os laboratórios organizados por módulo e a página
+                de referências.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Status do Projeto</h2>
+
+            <p>
+                Este site reúne as implementações práticas de HTML,
+                CSS e JavaScript, além da documentação técnica
+                elaborada durante as aulas.
+            </p>
+        </section>
+
+    </main>
 
 </body>
 </html>
